@@ -22,11 +22,27 @@ Converted string values to float, facilitating accurate numerical analysis and m
 
    SepalLengthCm: 4.9
 
+## Feature Engineering and Manual Classification
 
+### Decision Tree for Manual Classification
 
-## Manual Classification Accuracy
+The classification was carried out by constructing a decision tree that leverages logical conditions derived from the dataset's features. The tree operates as follows:
 
-Applying manual classification rules based on feature analysis yielded an impressive accuracy of 95%, underscoring the dataset's distinct species characteristics.
+- **If `PetalLength <= 2`:**
+  - **Classify as Setosa**
+- **Else if `PetalLength > 2.5`:**
+  - **If `PetalWidth >= 1.75`:**
+    - **If `SepalLength <= 5`:**
+      - **Classify as Versicolor**
+    - **Else if `SepalLength > 5`:**
+      - **Classify as Virginica**
+  - **Else if `PetalWidth < 1.75`:**
+    - **Classify as Virginica**
+
+### Results from Manual Classification
+
+The application of this decision tree for manual classification yielded an accuracy rate of **95%**. This high level of accuracy underscores the distinct morphological features that differentiate each Iris species, demonstrating the effectiveness of manual classification based on logical rules.
+
 
 ## How to Run This Analysis
 
