@@ -14,24 +14,14 @@ For convenience, a copy of the dataset is included in the "data" folder of this 
 
 Initially observed data with locale-specific decimal notation (commas), not suited for numerical operations in Python:
 
-  SepalLengthCm SepalWidthCm PetalLengthCm PetalWidthCm Species
-1           4,9            3           1,4          0,2  setosa
-2           4,7          3,2           1,3          0,2  setosa
-3           4,5          3,1           1,5          0,2  setosa
-4             5          3,6           1,4          0,2  setosa
-5           5,4          3,9           1,7          0,4  setosa
-
-
+  SepalLengthCm: 4,9            
+  
 ### After Conversion
 
 Converted string values to float, facilitating accurate numerical analysis and modeling:
 
-   SepalLengthCm  SepalWidthCm  PetalLengthCm  PetalWidthCm
-1            4.9           3.0            1.4           0.2
-2            4.7           3.2            1.3           0.2
-3            4.5           3.1            1.5           0.2
-4            5.0           3.6            1.4           0.2
-5            5.4           3.9            1.7           0.4
+   SepalLengthCm: 4.9
+
 
 
 ## Manual Classification Accuracy
